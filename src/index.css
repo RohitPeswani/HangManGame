@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .grid-cols-16{
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+  }
+  
+}
+
+ .correct-inactive{
+    @apply disabled:bg-blue-500 disabled:text-white disabled:opacity-50
+  }
+  
+.inactive{
+  @apply disabled:bg-gray-200 disabled:text-black disabled:opacity-50 disabled:pointer-events-none
+}
